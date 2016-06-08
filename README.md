@@ -1,7 +1,7 @@
-# app-dataporten-phpdem
+# app-dataporten-phpdemo
 
 Demo for authenticating with OAuth through Dataporten. 
-This demo requires docker as a prerequisit.
+This demo requires docker as a prerequisite.
 
 1 - Run docker pull
 
