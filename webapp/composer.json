@@ -1,5 +1,5 @@
 {
-    "name": "fkooman/testapp",
+    "name": "uninettno/app-dataporten-phpdemo",
     "require": {
         "fkooman/oauth-client": "dev-master",
         "guzzle/guzzle": "~3.0"
