@@ -28,6 +28,7 @@
 
 			if(getCookie("_ui")) {
 				var userInfo = JSON.parse(atob(decodeURIComponent(getCookie("_ui"))));
+				console.log(userInfo);
 				var name    = userInfo.user.name;
 				var email   = userInfo.user.email;
 				var picture = userInfo.user.profilephoto;

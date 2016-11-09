@@ -12,8 +12,7 @@ This demo requires docker as a prerequisite.
 ```
 DATAPORTEN_CLIENTID=******-*****-*****-****-********
 DATAPORTEN_CLIENTSECRET=*******-****-****-****-*******
-DATAPORTEN_REDIRECTURI=http://example.org/callback
-DATAPORTEN_SCOPES=userid,profile,user-id,email,groups
+DATAPORTEN_REDIRECTURI=http://localhost/cb.php
 ```
 
 3 - Run docker
