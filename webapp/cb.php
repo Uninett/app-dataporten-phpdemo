@@ -26,7 +26,7 @@ if(isset($_GET['code'])) {
 	setcookie("_ui", base64_encode(json_encode(array_merge($user, array("groups" => $groups)))));
 
 	header('HTTP/1.1 302 Found');
-	header('Location: index.html');
+	header('Location: index.php');
 	exit;
 } else if(isset($_GET['logout'])) {
 	setcookie("_ui", "", -1);
