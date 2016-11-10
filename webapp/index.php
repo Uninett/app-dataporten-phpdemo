@@ -8,35 +8,35 @@
 				font-family: sans-serif;
 				font-size: 1.3rem;
 				margin: auto;
-			    width: 50%;
-			    background: #e6e6e6;
-    			overflow: hidden;
+				width: 50%;
+				background: #e6e6e6;
+				overflow: hidden;
 			}
 
 			.user_container{
 				background: white;
-			    padding: 15px;
-			    /* margin: 20px 0; */
-			    height: 97vh;
-			    text-align: center;
+				padding: 15px;
+				/* margin: 20px 0; */
+				height: 97vh;
+				text-align: center;
 			}
 
 			.text_cont{
 				text-align: left;
-			    width: 550px;
-			    margin: auto;
+				width: 550px;
+				margin: auto;
 			}
 
 			.left{
 				width: 50%;
 				height: 135px;
-    			float: left;
+				float: left;
 			}
 
 			.right{
 				width: 50%;
-			    float: right;
-			    text-align: right;
+				float: right;
+				text-align: right;
 			}
 
 			#login-button{
@@ -44,24 +44,24 @@
 			}
 
 			#logout{
-			    padding: 10px;
-			    margin-top: 20px;
-			    -webkit-appearance: button;
-			    -moz-appearance: button;
-			    appearance: button;
-			    color: black;
-			    text-decoration: none;
+				padding: 10px;
+				margin-top: 20px;
+				-webkit-appearance: button;
+				-moz-appearance: button;
+				appearance: button;
+				color: black;
+				text-decoration: none;
 			}
 
 			#login{
 				position: relative;
-			    -webkit-appearance: button;
-			    -moz-appearance: button;
-			    appearance: button;
-			    color: black;
-			    text-decoration: none;
-			    padding: 10px;
-			    top: 7rem;
+				-webkit-appearance: button;
+				-moz-appearance: button;
+				appearance: button;
+				color: black;
+				text-decoration: none;
+				padding: 10px;
+				top: 7rem;
 			}
 		</style>
 	</head>
@@ -97,12 +97,16 @@
 			
 		?>
 		<div class="user_container">
-			<h1>Dataporten demo app</h1>
-			<div id="login-button">
-				<a id="login" href="cb.php">Login</a>
-			</div>
-			</div>
-		<?php 
+					<?php if(getenv('DATAPORTEN_CLIENTID') == FALSE) {
+							echo "<h1> Demo App running on ".gethostname()."</h1>";
+					} else {
+							echo "<h2>Dataporten Demo App  on ".gethostname()."</h2>";
+					?>
+					<div id="login-button">
+							<a id="login" href="cb.php">Login</a>
+					</div>
+					</div>
+			<?php   }
 			}
 		?>
 	</body>
